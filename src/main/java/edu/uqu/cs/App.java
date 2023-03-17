@@ -30,16 +30,18 @@ public class App{
  for (int i = 1; i <= 20; i++){
 
     if (i % 2 == 0){
-    System.out.print("Tweetle");
+    System.out.print("tweetle");
 
     if (i % 4 == 0)
-    System.out.print("Beetle");
+    System.out.print("beetle");
 
     if (i % 6 == 0)
-    System.out.print("Poodle");
+    System.out.print("poodle");
 
     }else{
-        System.out.print(" "+ i + " ");
+        System.out.print(" ");
+        System.out.print(i);
+        System.out.print(" ");
     }
 
     if (i == 11)
@@ -70,23 +72,55 @@ public class App{
 *
 */
 
- String result = "";
+ String result ="";
+ str = str.toUpperCase();
 
  for (int i = 0; i < str.length(); i++){
 
+    if (str.charAt(i) == 'A' || str.charAt(i) == 'B' || str.charAt(i) == 'C'){
+    result += '2';
+
+    }else if (str.charAt(i) == 'D' || str.charAt(i) == 'E' || str.charAt(i) == 'F'){
+    result += '3';
+
+    }else if (str.charAt(i) == 'G' || str.charAt(i) == 'H' || str.charAt(i) == 'I'){
+    result += '4';
+
+    }else if (str.charAt(i) == 'J' || str.charAt(i) == 'K' || str.charAt(i) == 'L'){
+    result += '5';
+
+    }else if (str.charAt(i) == 'M' || str.charAt(i) == 'N' || str.charAt(i) == 'O'){
+    result += '6';
+
+    }else if (str.charAt(i) == 'P' || str.charAt(i) == 'Q' || str.charAt(i) == 'R' || str.charAt(i) == 'S'){
+    result += '7';
+
+    }else if (str.charAt(i) == 'T' || str.charAt(i) == 'U' || str.charAt(i) == 'V'){
+    result += '8';
+
+    }else if (str.charAt(i) == 'W' || str.charAt(i) == 'X' || str.charAt(i) == 'Y' || str.charAt(i) == 'z'){
+        result += '9';
+    }
+
 
     }
+
+     return result;
+
+
+    }
+
+
     public static void main(String [] args) {
 
         Scanner input = new Scanner(System.in);
 
         twisters();
-
-        System.out.print("Enter a string ");
-        String string = input.nextLine();
         System.out.println();
 
-       phoneKeypad(string);
+        System.out.print("Enter a string : ");
+        String string = input.nextLine();
+       System.out.println(phoneKeypad(string));
 
 
     }
