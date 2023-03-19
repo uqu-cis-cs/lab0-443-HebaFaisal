@@ -26,32 +26,33 @@ public class App{
 *        1 Tweetle 3 TweetleBeetle 5 TweetlePoodle 7 TweetleBeetle 9 Tweetle 11
 *        TweetleBeetlePoodle 13 Tweetle 15 TweetleBeetle 17 TweetlePoodle 19 TweetleBeetle 
 */
-
+ 
+ 
  for (int i = 1; i <= 20; i++){
 
     if (i % 2 == 0){
-    System.out.print("tweetle");
+    System.out.print("Tweetle");
 
     if (i % 4 == 0)
-    System.out.print("beetle");
+    System.out.print("Beetle");
 
     if (i % 6 == 0)
-    System.out.print("poodle");
+    System.out.print("Poodle");
 
     }else{
-        System.out.print(" ");
-        System.out.print(i);
-        System.out.print(" ");
+        System.out.print(" " + i + " ");
+       // System.out.printf("%1d ",i);
+       // System.out.print(" ");
     }
 
     if (i == 11)
-    System.out.println();
+    System.out.print("\n");
 
- }
 
     }
+    }
 
-    public static String phoneKeypad (String str){
+    public static void phoneKeypad (String str){
          
 /**
 * Write a method named "phoneKeypad" that takes a string parameter (str)
@@ -78,35 +79,33 @@ public class App{
  for (int i = 0; i < str.length(); i++){
 
     if (str.charAt(i) == 'A' || str.charAt(i) == 'B' || str.charAt(i) == 'C'){
-    result += '2';
+    result += 2;
 
     }else if (str.charAt(i) == 'D' || str.charAt(i) == 'E' || str.charAt(i) == 'F'){
-    result += '3';
+    result += 3;
 
     }else if (str.charAt(i) == 'G' || str.charAt(i) == 'H' || str.charAt(i) == 'I'){
-    result += '4';
+    result += 4;
 
     }else if (str.charAt(i) == 'J' || str.charAt(i) == 'K' || str.charAt(i) == 'L'){
-    result += '5';
+    result += 5;
 
     }else if (str.charAt(i) == 'M' || str.charAt(i) == 'N' || str.charAt(i) == 'O'){
-    result += '6';
+    result += 6;
 
     }else if (str.charAt(i) == 'P' || str.charAt(i) == 'Q' || str.charAt(i) == 'R' || str.charAt(i) == 'S'){
-    result += '7';
+    result += 7;
 
     }else if (str.charAt(i) == 'T' || str.charAt(i) == 'U' || str.charAt(i) == 'V'){
-    result += '8';
+    result += 8;
 
     }else if (str.charAt(i) == 'W' || str.charAt(i) == 'X' || str.charAt(i) == 'Y' || str.charAt(i) == 'z'){
-        result += '9';
+        result += 9;
     }
 
-
     }
 
-     return result;
-
+    System.out.print(result);
 
     }
 
@@ -120,7 +119,7 @@ public class App{
 
         System.out.print("Enter a string : ");
         String string = input.nextLine();
-       System.out.println(phoneKeypad(string));
+        phoneKeypad(string);
 
 
     }
