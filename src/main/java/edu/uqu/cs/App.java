@@ -40,15 +40,13 @@ public class App{
     System.out.print("Poodle");
 
     }else{
-        System.out.print(" " + i + " ");
+        System.out.print(i);
        // System.out.printf("%1d ",i);
        // System.out.print(" ");
     }
 
-    if (i == 11)
-    System.out.print("\n");
-
-
+    System.out.print(" ");
+    
     }
     }
 
